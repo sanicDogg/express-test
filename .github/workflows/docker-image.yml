@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag myimage:$(date +%s)
     - name: Run the Docker image
-      run: docker run -d -p 3000:3000 yourusername/myimage:latest
+      run: docker run -d -p 3000:3000 myimage:latest
