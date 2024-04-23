@@ -6,16 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Installing deps...'
-                script {
-
-                    sh 'npm install'
-                }
-            }
-        }
-
         stage('Docker Build') {
             steps {
                 echo 'Building Docker Image...'
